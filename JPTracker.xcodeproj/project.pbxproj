@@ -7,11 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F03F4962C3BDE0A002E272E /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F03F4952C3BDE0A002E272E /* SearchView.swift */; };
 		5F8A3F202C35F02E000E7D77 /* TempView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8A3F1F2C35F02E000E7D77 /* TempView.swift */; };
 		5F8A3F242C368E8B000E7D77 /* AlphaVantageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8A3F232C368E8B000E7D77 /* AlphaVantageService.swift */; };
 		5F8A3F262C36908B000E7D77 /* DailyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8A3F252C36908B000E7D77 /* DailyData.swift */; };
-		5F8A3F282C36A825000E7D77 /* MockStockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8A3F272C36A825000E7D77 /* MockStockService.swift */; };
-		5F8A3F2B2C36C5B1000E7D77 /* monthly.json in Resources */ = {isa = PBXBuildFile; fileRef = 5F8A3F2A2C36C5B1000E7D77 /* monthly.json */; };
 		5F8A3F2D2C36DD5D000E7D77 /* MonthlyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8A3F2C2C36DD5D000E7D77 /* MonthlyData.swift */; };
 		5F8A3F2F2C36DD95000E7D77 /* TimeSeriesDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8A3F2E2C36DD95000E7D77 /* TimeSeriesDay.swift */; };
 		5F8A3F342C36E575000E7D77 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8A3F332C36E575000E7D77 /* Utils.swift */; };
@@ -36,11 +35,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5F03F4952C3BDE0A002E272E /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		5F8A3F1F2C35F02E000E7D77 /* TempView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempView.swift; sourceTree = "<group>"; };
 		5F8A3F232C368E8B000E7D77 /* AlphaVantageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphaVantageService.swift; sourceTree = "<group>"; };
 		5F8A3F252C36908B000E7D77 /* DailyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyData.swift; sourceTree = "<group>"; };
-		5F8A3F272C36A825000E7D77 /* MockStockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockStockService.swift; sourceTree = "<group>"; };
-		5F8A3F2A2C36C5B1000E7D77 /* monthly.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = monthly.json; sourceTree = "<group>"; };
 		5F8A3F2C2C36DD5D000E7D77 /* MonthlyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyData.swift; sourceTree = "<group>"; };
 		5F8A3F2E2C36DD95000E7D77 /* TimeSeriesDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSeriesDay.swift; sourceTree = "<group>"; };
 		5F8A3F332C36E575000E7D77 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
@@ -76,12 +74,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5F8A3F292C36C56F000E7D77 /* JSON */ = {
+		5F03F4942C3BDAFB002E272E /* DetailComponents */ = {
 			isa = PBXGroup;
 			children = (
-				5F8A3F2A2C36C5B1000E7D77 /* monthly.json */,
+				5F8A3F362C36E651000E7D77 /* DescriptionComponent.swift */,
+				5F8A3F382C36E6C2000E7D77 /* StockDetailComponent.swift */,
+				5F8A3F3A2C36E713000E7D77 /* HeaderComponent.swift */,
+				5F8A3F3C2C38802A000E7D77 /* ChartComponent.swift */,
+				5F8A3F482C3AD17E000E7D77 /* SegmentedPicker.swift */,
+				5F8A3F4A2C3B423F000E7D77 /* CustomSegmentedControl.swift */,
+				5F8A3F4C2C3B428E000E7D77 /* StockBasicInfoComponent.swift */,
 			);
-			path = JSON;
+			path = DetailComponents;
 			sourceTree = "<group>";
 		};
 		5F8A3F302C36E3C0000E7D77 /* Assets */ = {
@@ -96,13 +100,7 @@
 		5F8A3F352C36E635000E7D77 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				5F8A3F362C36E651000E7D77 /* DescriptionComponent.swift */,
-				5F8A3F382C36E6C2000E7D77 /* StockDetailComponent.swift */,
-				5F8A3F3A2C36E713000E7D77 /* HeaderComponent.swift */,
-				5F8A3F3C2C38802A000E7D77 /* ChartComponent.swift */,
-				5F8A3F482C3AD17E000E7D77 /* SegmentedPicker.swift */,
-				5F8A3F4A2C3B423F000E7D77 /* CustomSegmentedControl.swift */,
-				5F8A3F4C2C3B428E000E7D77 /* StockBasicInfoComponent.swift */,
+				5F03F4942C3BDAFB002E272E /* DetailComponents */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -152,6 +150,7 @@
 			children = (
 				5FEDB0852C35D09E002CEBE5 /* DetailView.swift */,
 				5F8A3F1F2C35F02E000E7D77 /* TempView.swift */,
+				5F03F4952C3BDE0A002E272E /* SearchView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -173,10 +172,8 @@
 		5FEDB08D2C35DFA1002CEBE5 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				5F8A3F292C36C56F000E7D77 /* JSON */,
 				5FEDB08E2C35DFE6002CEBE5 /* StockService.swift */,
 				5F8A3F232C368E8B000E7D77 /* AlphaVantageService.swift */,
-				5F8A3F272C36A825000E7D77 /* MockStockService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -239,7 +236,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F8A3F2B2C36C5B1000E7D77 /* monthly.json in Resources */,
 				5FEDB07E2C35D05C002CEBE5 /* Preview Assets.xcassets in Resources */,
 				5FEDB07B2C35D05C002CEBE5 /* Assets.xcassets in Resources */,
 			);
@@ -262,10 +258,10 @@
 				5F8A3F432C397139000E7D77 /* MetaData.swift in Sources */,
 				5F8A3F4B2C3B423F000E7D77 /* CustomSegmentedControl.swift in Sources */,
 				5FEDB0792C35D058002CEBE5 /* ContentView.swift in Sources */,
-				5F8A3F282C36A825000E7D77 /* MockStockService.swift in Sources */,
 				5F8A3F3B2C36E713000E7D77 /* HeaderComponent.swift in Sources */,
 				5F8A3F3D2C38802A000E7D77 /* ChartComponent.swift in Sources */,
 				5F8A3F2D2C36DD5D000E7D77 /* MonthlyData.swift in Sources */,
+				5F03F4962C3BDE0A002E272E /* SearchView.swift in Sources */,
 				5FEDB0862C35D09E002CEBE5 /* DetailView.swift in Sources */,
 				5F8A3F2F2C36DD95000E7D77 /* TimeSeriesDay.swift in Sources */,
 				5FEDB0772C35D058002CEBE5 /* JPTrackerApp.swift in Sources */,

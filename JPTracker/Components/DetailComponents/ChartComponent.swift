@@ -50,7 +50,7 @@ struct ChartView: View {
                      yEnd: .value("Price", price)
                  )
                  .foregroundStyle(LinearGradient(
-                    gradient: Gradient(colors: [.purple.opacity(0.05), .blue.opacity(0.035), .white]),
+                    gradient: Gradient(colors: [.purple.opacity(0.05), .blue.opacity(0.035), Color("Background")]),
                      startPoint: .top,
                      endPoint: .bottom
                  ))

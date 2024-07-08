@@ -12,6 +12,7 @@ struct JPTrackerApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .accentColor(Color("Primary"))
         }
     }
 }

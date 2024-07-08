@@ -44,7 +44,7 @@ struct CustomSegmentedControl: View {
             }
         }
         .padding(.vertical)
-        .background(Color.white)
+//        .background(Color("Background"))
         }
     init(categories: [Category]) {
         self.categories = categories

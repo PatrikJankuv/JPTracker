@@ -9,9 +9,18 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        DetailView(symbol: "IBM")
-//        DetailView(symbol: "TSLA")
-//        DetailView(symbol: "GOOG")
+        TabView {
+            DetailView(symbol: "IBM")
+    //        DetailView(symbol: "TSLA")
+    //        DetailView(symbol: "GOOG")
+                .tabItem {
+                    Image(systemName: "house")
+                }
+            SearchView()
+                .tabItem {
+                    Image(systemName: "person")
+                }
+        }
     }
 }
 

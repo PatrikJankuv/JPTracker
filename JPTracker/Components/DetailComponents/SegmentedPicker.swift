@@ -42,7 +42,6 @@ struct SegmentedPicker<SelectionValue, Content>: View where SelectionValue: Hash
                                     Capsule()
                                         .foregroundStyle(.clear)
                                     content(item).id(item)
-                                        .foregroundStyle(.black)
                                         .padding(.horizontal, 4)
                                         .padding(.vertical, 8)
                                         .lineLimit(1)

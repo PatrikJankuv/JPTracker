@@ -26,12 +26,12 @@ struct DescriptionComponent: View {
                 showFullDescription.toggle()
             }) {
                 Text(showFullDescription ? "Less" : "More")
-                    .foregroundColor(Colors.primaryColor)
+                    .foregroundColor(Color("Primary"))
                     .padding(.vertical, 4)
                     .padding(.horizontal, 8)
             }
         }
-        .background(Color.white)
+        .background(Color("Background"))
         .cornerRadius(10)
         .shadow(radius: 4)
         .padding(.bottom)

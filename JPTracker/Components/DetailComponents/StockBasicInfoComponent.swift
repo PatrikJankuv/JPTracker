@@ -28,7 +28,7 @@ struct StockBasicInfoComponent: View {
             .frame(maxWidth: .infinity)
         }
         .padding()
-        .background(Color.white)
+        .background(Color("Background"))
         .cornerRadius(10)
         .shadow(radius: 4)
     }
